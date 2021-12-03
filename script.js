@@ -7,6 +7,7 @@ form.addEventListener("submit", (e) => {
   const emailVal = email.value;
   if (!validateEmail(emailVal)) {
     form.classList.add("error");
+    email.value = "example@email/com";
   } else {
     form.classList.remove("error");
   }

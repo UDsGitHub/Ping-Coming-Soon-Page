@@ -78,14 +78,15 @@ form {
 }
 
 form #email {
+  background-color: transparent;
   display: inline-block;
   padding: 0.5rem;
   padding: 1rem 1.5rem;
   border-radius: 50px;
   border: 1px solid #c2d3ff;
-  width: 75%;
+  width: 70%;
   outline: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 form #email::-webkit-input-placeholder {
@@ -110,7 +111,7 @@ form #email::placeholder {
 
 form button {
   font-size: 0.8rem;
-  width: 25%;
+  width: 30%;
   padding: 0.5rem;
   border-radius: 50px;
   border: 0;
@@ -118,15 +119,21 @@ form button {
   color: white;
   font-weight: 300;
   cursor: pointer;
-  -webkit-transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
+  -webkit-box-shadow: 0 3px 10px 2px #c2d3ff;
+          box-shadow: 0 3px 10px 2px #c2d3ff;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 form button:hover {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  -webkit-filter: brightness(1.25);
+          filter: brightness(1.25);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(79, 125, 243, 0.5);
+          box-shadow: 0 3px 10px 0 rgba(79, 125, 243, 0.5);
+  -webkit-transform: scale(0.975);
+          transform: scale(0.975);
 }
 
 form::after {
@@ -195,13 +202,15 @@ footer .share-links .icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 footer .share-links .icon:hover {
+  background-color: #4f7df3;
+  color: white;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
