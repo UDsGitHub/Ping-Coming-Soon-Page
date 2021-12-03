@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;600;700&display=swap");
+html {
+  font-size: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 2rem;
+  background-color: white;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 32rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+header .logo {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  color: #151f29;
+}
+
+header h1 span {
+  font-weight: 300;
+  color: #969696;
+}
+
+header h2 {
+  font-weight: 400;
+  color: #151f29;
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+form #email {
+  display: inline-block;
+  padding: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  border: 1px solid #c2d3ff;
+  width: 75%;
+  outline: none;
+  font-size: .8rem;
+}
+
+form #email::-webkit-input-placeholder {
+  color: #c2d3ff;
+  font-size: 0.8rem;
+}
+
+form #email:-ms-input-placeholder {
+  color: #c2d3ff;
+  font-size: 0.8rem;
+}
+
+form #email::-ms-input-placeholder {
+  color: #c2d3ff;
+  font-size: 0.8rem;
+}
+
+form #email::placeholder {
+  color: #c2d3ff;
+  font-size: 0.8rem;
+}
+
+form button {
+  font-size: 0.8rem;
+  width: 25%;
+  padding: 0.5rem;
+  border-radius: 50px;
+  border: 0;
+  background-color: #4f7df3;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+form button:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+form::after {
+  content: "Please provide a valid email address";
+  position: absolute;
+  top: 110%;
+  left: 5%;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #ff5263;
+  display: none;
+}
+
+form.error #email {
+  border: 1px solid #ff5263;
+}
+
+form.error::after {
+  display: block;
+}
+
+.image {
+  margin: 2rem 0;
+}
+
+.image img {
+  width: 100%;
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+footer p {
+  color: #969696;
+}
+
+footer .share-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+footer .share-links .icon {
+  color: #4f7df3;
+  border: 1px solid #c2d3ff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+footer .share-links .icon:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+footer .copyright {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  form #email,
+  form button {
+    width: 100%;
+  }
+  form button {
+    padding: 1rem;
+  }
+}
